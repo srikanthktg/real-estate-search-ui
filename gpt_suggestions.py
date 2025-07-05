@@ -21,7 +21,7 @@ Generate 5 autocomplete-style full property search phrases based on this data.
 """
     response = openai.ChatCompletion.create(
         model="gpt-4",
-        messages=[{{"role": "user", "content": prompt}}],
+        messages=[{"role": "user", "content": prompt}],
         temperature=0.7,
         max_tokens=150
     )
